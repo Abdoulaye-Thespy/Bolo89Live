@@ -55,6 +55,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 60px;
   -webkit-animation: animate-preloader 1s linear infinite;
   animation: animate-preloader 1s linear infinite;
+  animation-duration: 3s;
 }
 
 @-webkit-keyframes animate-preloader {
@@ -780,14 +781,28 @@ section {
   font-size: 15px;
   margin: 0;
   padding: 0;
+  margin-bottom: 10px;
 }
 .why-us .box:hover {
   background: #cda45e;
   padding: 30px 30px 70px 30px;
   box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
 }
-.why-us .box:hover span, .why-us .box:hover h4, .why-us .box:hover p {
+.why-us .box:hover span,.why-us .box:hover ul i,.why-us .box:hover ul li, .why-us .box:hover h4, .why-us .box:hover p {
   color: #fff;
+}
+.why-us .box ul {
+  list-style: none;
+  padding: 0;
+}
+.why-us .box ul li {
+  padding-bottom: 10px;
+  color: #aaaaaa;
+}
+.why-us .box ul i {
+  font-size: 20px;
+  padding-right: 4px;
+  color: #cda45e;
 }
 
 /*--------------------------------------------------------------
