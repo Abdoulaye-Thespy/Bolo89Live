@@ -877,11 +877,33 @@ section {
 }
 .background {
   height: 350px;
-  background: url("../img/bolo89/office1.jpg");
+  background: url("../img/bolo89/office1b.jpg");
   background-size: cover;
   position: relative;
   padding: 0;
 }
+.back2 {
+  background: url("../img/bolo89/office2.jpg");
+}
+.back3 {
+  background: url("../img/bolo89/office3.jpg");
+}
+.back4 {
+  background: url("../img/bolo89/office4.jpg");
+}
+.back5 {
+  background: url("../img/bolo89/office5.jpg");
+}
+.back6 {
+  background: url("../img/bolo89/office1.jpg");
+}
+.back7 {
+  background: url("../img/bolo89/office6.jpg");
+}
+.back8 {
+  background: url("../img/bolo89/office7.jpg");
+}
+
 
 /*--------------------------------------------------------------
 # Specials
