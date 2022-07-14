@@ -1,6 +1,3 @@
-Thanks for downloading this template!
+# BOLO89
 
-Template Name: Restaurantly
-Template URL: https://bootstrapmade.com/restaurantly-restaurant-template/
-Author: BootstrapMade.com
-License: https://bootstrapmade.com/license/
+## [Live Link](https://bolo89-cmr.github.io/BOLO89_webite/)
