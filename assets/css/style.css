@@ -909,7 +909,7 @@ section {
 --------------------------------------------------------------*/
 .blog-row {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
 }
 
 .blog-background {
@@ -918,6 +918,7 @@ section {
 
 .blog-div {
   margin-right: 30px;
+  margin-bottom: 30px;
   background-color: #1a1814;
 }
 
@@ -940,6 +941,17 @@ section {
   margin-bottom: 10px;
 }
 
+@media (min-width: 775px) {
+  .blog-row {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1024px) {
+  .blog-row {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
 
 
 /*--------------------------------------------------------------
