@@ -9,7 +9,7 @@
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", sans-serif !important;
   background: #0c0b09;
   color: #fff;
 }
@@ -25,7 +25,7 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Playfair Display", serif;
+  /* font-family: "Playfair Display", serif; */
 }
 
 /*--------------------------------------------------------------
@@ -181,7 +181,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 300;
   letter-spacing: 1px;
   text-transform: uppercase;
-  font-family: "Poppins", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
 }
 #header .logo a {
   color: #fff;
@@ -428,7 +428,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   line-height: 56px;
   color: #fff;
-  font-family: "Poppins", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
 }
 #hero h1 span {
   color: #cda45e;
@@ -602,7 +602,7 @@ section {
   letter-spacing: 2px;
   text-transform: uppercase;
   color: #aaaaaa;
-  font-family: "Poppins", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
 }
 .section-title h2::after {
   content: "";
@@ -617,7 +617,7 @@ section {
   margin: 0;
   font-size: 36px;
   font-weight: 700;
-  font-family: "Playfair Display", serif;
+  /* font-family: "Playfair Display", serif; */
   color: #cda45e;
 }
 
@@ -671,7 +671,7 @@ section {
 # About
 --------------------------------------------------------------*/
 .about {
-  background: url("../img/bolo89/background2.jpg") center center;
+  background: url("../img/bolo89/about.jpeg") center center;
   background-size: cover;
   position: relative;
   padding: 80px 0;
@@ -826,7 +826,7 @@ section {
   margin-bottom: 10px;
   transition: all ease-in-out 0.3s;
   border-radius: 50px;
-  font-family: "Playfair Display", serif;
+  /* font-family: "Playfair Display", serif; */
 }
 .menu #menu-flters li:hover, .menu #menu-flters li.filter-active {
   color: #cda45e;
@@ -1049,7 +1049,7 @@ section {
 }
 .events .event-item .price {
   font-size: 26px;
-  font-family: "Open Sans", sans-serif;
+  /* font-family: "Open Sans", sans-serif; */
   font-weight: 700;
   margin-bottom: 15px;
 }
@@ -1352,7 +1352,7 @@ section {
   font-size: 18px;
   font-weight: 500;
   margin-bottom: 5px;
-  font-family: "Poppins", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
 }
 .contact .info p {
   padding: 0 0 0 60px;
@@ -1469,6 +1469,9 @@ section {
   color: #fff;
   font-size: 14px;
 }
+#footer .footer-info img {
+  max-width: 200px;
+}
 #footer .footer-top {
   background: #0c0b09;
   border-top: 1px solid #37332a;
@@ -1485,13 +1488,13 @@ section {
   line-height: 1;
   font-weight: 300;
   text-transform: uppercase;
-  font-family: "Poppins", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
 }
 #footer .footer-top .footer-info p {
   font-size: 14px;
   line-height: 24px;
   margin-bottom: 0;
-  font-family: "Playfair Display", serif;
+  /* font-family: "Playfair Display", serif; */
   color: #fff;
 }
 #footer .footer-top .social-links a {
