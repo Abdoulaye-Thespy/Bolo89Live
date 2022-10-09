@@ -699,7 +699,7 @@ section {
 .about .about-img::before {
   position: absolute;
   left: 20px;
-  top: 20px;
+  top: 30px;
   width: 60px;
   height: 60px;
   z-index: 1;
@@ -711,7 +711,7 @@ section {
 .about .about-img::after {
   position: absolute;
   right: 20px;
-  bottom: 20px;
+  bottom: 30px;
   width: 60px;
   height: 60px;
   z-index: 2;
@@ -776,7 +776,7 @@ section {
   font-weight: 600;
   padding: 0;
   margin: 20px 0;
-  color: rgba(255, 255, 255, 0.8);
+  color: #625b4be1;
 }
 .why-us .box p {
   color: #aaaaaa;
@@ -870,7 +870,7 @@ section {
   border-radius: 50px;
   transition: 0.3s;
   line-height: 1;
-  color: black;
+  color: #625b4b;
   border: 2px solid #cda45e;
 }
 .menu .btn-book:hover {
@@ -1080,7 +1080,7 @@ section {
 .events .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: grey;
   opacity: 1;
 }
 .events .swiper-pagination .swiper-pagination-bullet-active {
@@ -1225,7 +1225,7 @@ section {
   font-style: italic;
   margin: 0 15px 0 15px;
   padding: 20px 20px 60px 20px;
-  background: white;
+  background: whitesmoke;
   position: relative;
   border-radius: 6px;
   position: relative;
@@ -1238,7 +1238,7 @@ section {
 .testimonials .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(128, 128, 128, 0.612);
   opacity: 1;
 }
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
@@ -1478,7 +1478,7 @@ section {
   max-width: 200px;
   /* color: red; */
   padding: 10px 20px;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.85);
 }
 #footer .footer-top {
   background: white;
