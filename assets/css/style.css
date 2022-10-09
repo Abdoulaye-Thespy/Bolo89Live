@@ -9,7 +9,7 @@
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", sans-serif !important;
   background: #0c0b09;
   color: #fff;
 }
@@ -25,7 +25,7 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Playfair Display", serif;
+  /* font-family: "Playfair Display", serif; */
 }
 
 /*--------------------------------------------------------------
@@ -55,6 +55,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 60px;
   -webkit-animation: animate-preloader 1s linear infinite;
   animation: animate-preloader 1s linear infinite;
+  animation-duration: 3s;
 }
 
 @-webkit-keyframes animate-preloader {
@@ -180,7 +181,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 300;
   letter-spacing: 1px;
   text-transform: uppercase;
-  font-family: "Poppins", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
 }
 #header .logo a {
   color: #fff;
@@ -399,7 +400,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/bolo89/background1.jpg") top center;
+  background: url("../img/bolo89/bolo89-11.jpg") top center;
   background-size: cover;
   position: relative;
   padding: 0;
@@ -427,7 +428,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   line-height: 56px;
   color: #fff;
-  font-family: "Poppins", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
 }
 #hero h1 span {
   color: #cda45e;
@@ -601,7 +602,7 @@ section {
   letter-spacing: 2px;
   text-transform: uppercase;
   color: #aaaaaa;
-  font-family: "Poppins", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
 }
 .section-title h2::after {
   content: "";
@@ -616,7 +617,7 @@ section {
   margin: 0;
   font-size: 36px;
   font-weight: 700;
-  font-family: "Playfair Display", serif;
+  /* font-family: "Playfair Display", serif; */
   color: #cda45e;
 }
 
@@ -670,7 +671,7 @@ section {
 # About
 --------------------------------------------------------------*/
 .about {
-  background: url("../img/bolo89/background2.jpg") center center;
+  background: url("../img/bolo89/about.jpeg") center center;
   background-size: cover;
   position: relative;
   padding: 80px 0;
@@ -780,14 +781,28 @@ section {
   font-size: 15px;
   margin: 0;
   padding: 0;
+  margin-bottom: 10px;
 }
 .why-us .box:hover {
   background: #cda45e;
   padding: 30px 30px 70px 30px;
   box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
 }
-.why-us .box:hover span, .why-us .box:hover h4, .why-us .box:hover p {
+.why-us .box:hover span,.why-us .box:hover ul i,.why-us .box:hover ul li, .why-us .box:hover h4, .why-us .box:hover p {
   color: #fff;
+}
+.why-us .box ul {
+  list-style: none;
+  padding: 0;
+}
+.why-us .box ul li {
+  padding-bottom: 10px;
+  color: #aaaaaa;
+}
+.why-us .box ul i {
+  font-size: 20px;
+  padding-right: 4px;
+  color: #cda45e;
 }
 
 /*--------------------------------------------------------------
@@ -811,7 +826,7 @@ section {
   margin-bottom: 10px;
   transition: all ease-in-out 0.3s;
   border-radius: 50px;
-  font-family: "Playfair Display", serif;
+  /* font-family: "Playfair Display", serif; */
 }
 .menu #menu-flters li:hover, .menu #menu-flters li.filter-active {
   color: #cda45e;
@@ -819,59 +834,125 @@ section {
 .menu #menu-flters li:last-child {
   margin-right: 0;
 }
+/*started editing here*/
 .menu .menu-item {
+  padding-inline: 25px;
   margin-top: 50px;
+  margin-bottom: 50px;
 }
-.menu .menu-img {
-  width: 70px;
-  border-radius: 50%;
-  float: left;
-  border: 5px solid rgba(255, 255, 255, 0.2);
+.menu .box-shadow {
+  margin: 0;
+  box-shadow: 0 3px 8px 6px black;
 }
-.menu .menu-content {
-  margin-left: 85px;
-  overflow: hidden;
+
+.menu .btns {
+  margin-top: 30px;
+}
+.menu h3, .menu .menu-ingredients {
+  padding: 15px;
+  padding-bottom: 0;
+}
+.menu .btns {
+  padding: 15px;
+  padding-top: 0;
   display: flex;
-  justify-content: space-between;
-  position: relative;
+  justify-content: center;
 }
-.menu .menu-content::after {
-  content: "......................................................................" "...................................................................." "....................................................................";
-  position: absolute;
-  left: 20px;
-  right: 0;
-  top: -4px;
-  z-index: 1;
-  color: #bab3a6;
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-}
-.menu .menu-content a {
-  padding-right: 10px;
-  background: #1a1814;
-  position: relative;
-  z-index: 3;
-  font-weight: 700;
-  color: white;
-  transition: 0.3s;
-}
-.menu .menu-content a:hover {
-  color: #cda45e;
-}
-.menu .menu-content span {
-  background: #1a1814;
-  position: relative;
-  z-index: 3;
-  padding: 0 10px;
+.menu .btn-book {
   font-weight: 600;
-  color: #cda45e;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 12px 30px;
+  border-radius: 50px;
+  transition: 0.3s;
+  line-height: 1;
+  color: white;
+  border: 2px solid #cda45e;
 }
-.menu .menu-ingredients {
-  margin-left: 85px;
-  font-style: italic;
-  font-size: 14px;
-  font-family: "Poppins", sans-serif;
-  color: rgba(255, 255, 255, 0.5);
+.menu .btn-book:hover {
+  background: #cda45e;
+  color: #fff;
 }
+.background {
+  height: 350px;
+  background: url("../img/bolo89/office1b.jpg");
+  background-size: cover;
+  position: relative;
+  padding: 0;
+}
+.back2 {
+  background: url("../img/bolo89/office2.jpg");
+}
+.back3 {
+  background: url("../img/bolo89/office3.jpg");
+}
+.back4 {
+  background: url("../img/bolo89/office4.jpg");
+}
+.back5 {
+  background: url("../img/bolo89/office5.jpg");
+}
+.back6 {
+  background: url("../img/bolo89/office1.jpg");
+}
+.back7 {
+  background: url("../img/bolo89/office6.jpg");
+}
+.back8 {
+  background: url("../img/bolo89/office7.jpg");
+}
+
+/*--------------------------------------------------------------
+# Blog
+--------------------------------------------------------------*/
+.blog-row {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.blog-background {
+  border-bottom: 0.5rem solid #cda45e;
+}
+
+.blog-div {
+  margin-right: 30px;
+  margin-bottom: 30px;
+  background-color: #1a1814;
+}
+
+.blog-info {
+  padding: 15px;
+}
+
+.blog-heading {
+  font-size: 24px;
+  font-weight: 600;
+  padding: 0;
+  margin: 20px 0;
+  color: rgba(255, 255, 255, 0.8);
+}
+.blog-text {
+  color: #aaaaaa;
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 775px) {
+  .blog-row {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1024px) {
+  .blog-row {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
 
 /*--------------------------------------------------------------
 # Specials
@@ -930,7 +1011,7 @@ section {
 # Events
 --------------------------------------------------------------*/
 .events {
-  background: url(../img/events-bg.jpg) center center no-repeat;
+  background: url(../img/bolo89/background3.jpg) center center no-repeat;
   background-size: cover;
   position: relative;
 }
@@ -968,7 +1049,7 @@ section {
 }
 .events .event-item .price {
   font-size: 26px;
-  font-family: "Open Sans", sans-serif;
+  /* font-family: "Open Sans", sans-serif; */
   font-weight: 700;
   margin-bottom: 15px;
 }
@@ -1271,7 +1352,7 @@ section {
   font-size: 18px;
   font-weight: 500;
   margin-bottom: 5px;
-  font-family: "Poppins", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
 }
 .contact .info p {
   padding: 0 0 0 60px;
@@ -1388,6 +1469,9 @@ section {
   color: #fff;
   font-size: 14px;
 }
+#footer .footer-info img {
+  max-width: 200px;
+}
 #footer .footer-top {
   background: #0c0b09;
   border-top: 1px solid #37332a;
@@ -1404,13 +1488,13 @@ section {
   line-height: 1;
   font-weight: 300;
   text-transform: uppercase;
-  font-family: "Poppins", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
 }
 #footer .footer-top .footer-info p {
   font-size: 14px;
   line-height: 24px;
   margin-bottom: 0;
-  font-family: "Playfair Display", serif;
+  /* font-family: "Playfair Display", serif; */
   color: #fff;
 }
 #footer .footer-top .social-links a {
