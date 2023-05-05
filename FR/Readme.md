@@ -9,17 +9,13 @@
 ```
 
 
-```cd BOLO89_webite
-```
-
-```git checkout dev
-```
-
-```git checkout -b [your branch name]
+```npm
+  cd BOLO89_webite
 ```
 
 
-```code .
+```npm
+  code .
 ```
 
 - Open with live server.
