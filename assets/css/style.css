@@ -10,13 +10,8 @@
 --------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif !important;
-<<<<<<< HEAD
-  background: #0c0b09;
-  color: #fff;
-=======
   background: white;
   color: #625b4b;
->>>>>>> dev
 }
 
 a {
@@ -44,7 +39,8 @@ h1, h2, h3, h4, h5, h6 {
   bottom: 0;
   z-index: 9999;
   overflow: hidden;
-  background: #1a1814;
+  background: white;
+  /* background: #1a1814; */
 }
 
 #preloader:before {
@@ -103,10 +99,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 .back-to-top:hover {
   background: #cda45e;
-  color: #1a1814;
+  color: white;
 }
 .back-to-top:hover i {
-  color: #444444;
+  color: white;
 }
 .back-to-top.active {
   visibility: visible;
@@ -592,7 +588,7 @@ section {
 }
 
 .section-bg {
-  background-color: #1a1814;
+  background-color: white;
 }
 
 .section-title {
@@ -683,7 +679,7 @@ section {
 }
 .about:before {
   content: "";
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(255, 255, 255, 0.773);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -702,7 +698,7 @@ section {
 .about .about-img::before {
   position: absolute;
   left: 20px;
-  top: 20px;
+  top: 30px;
   width: 60px;
   height: 60px;
   z-index: 1;
@@ -714,7 +710,7 @@ section {
 .about .about-img::after {
   position: absolute;
   right: 20px;
-  bottom: 20px;
+  bottom: 30px;
   width: 60px;
   height: 60px;
   z-index: 2;
@@ -766,7 +762,7 @@ section {
   padding: 50px 30px;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   transition: all ease-in-out 0.3s;
-  background: #1a1814;
+  background: white;
 }
 .why-us .box span {
   display: block;
@@ -779,7 +775,7 @@ section {
   font-weight: 600;
   padding: 0;
   margin: 20px 0;
-  color: rgba(255, 255, 255, 0.8);
+  color: #625b4be1;
 }
 .why-us .box p {
   color: #aaaaaa;
@@ -827,7 +823,7 @@ section {
   font-size: 16px;
   font-weight: 500;
   line-height: 1;
-  color: #fff;
+  color: #625b4b;
   margin-bottom: 10px;
   transition: all ease-in-out 0.3s;
   border-radius: 50px;
@@ -847,7 +843,7 @@ section {
 }
 .menu .box-shadow {
   margin: 0;
-  box-shadow: 0 3px 8px 6px black;
+  box-shadow: 0 3px 8px 6px #cda45ed2;
 }
 
 .menu .btns {
@@ -873,7 +869,7 @@ section {
   border-radius: 50px;
   transition: 0.3s;
   line-height: 1;
-  color: white;
+  color: #625b4b;
   border: 2px solid #cda45e;
 }
 .menu .btn-book:hover {
@@ -881,7 +877,7 @@ section {
   color: #fff;
 }
 .background {
-  height: 350px;
+  height: 300px;
   background: url("../img/bolo89/office1b.jpg");
   background-size: cover;
   position: relative;
@@ -924,7 +920,7 @@ section {
 .blog-div {
   margin-right: 30px;
   margin-bottom: 30px;
-  background-color: #1a1814;
+  background-color: rgb(248, 245, 245);
 }
 
 .blog-info {
@@ -1083,7 +1079,7 @@ section {
 .events .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: grey;
   opacity: 1;
 }
 .events .swiper-pagination .swiper-pagination-bullet-active {
@@ -1094,10 +1090,13 @@ section {
 # Book A Table
 --------------------------------------------------------------*/
 .book-a-table .php-email-form {
-  width: 100%;
+  width: 80%;
+  margin: auto;
+
 }
 .book-a-table .php-email-form .form-group {
   padding-bottom: 8px;
+  
 }
 .book-a-table .php-email-form .validate {
   display: none;
@@ -1108,7 +1107,7 @@ section {
 }
 .book-a-table .php-email-form .error-message {
   display: none;
-  color: #fff;
+  color: #625b4b;
   background: #ed3c0d;
   text-align: left;
   padding: 15px;
@@ -1119,7 +1118,7 @@ section {
 }
 .book-a-table .php-email-form .sent-message {
   display: none;
-  color: #fff;
+  color: #625b4b;
   background: #18d26e;
   text-align: center;
   padding: 15px;
@@ -1146,9 +1145,9 @@ section {
   border-radius: 0;
   box-shadow: none;
   font-size: 14px;
-  background: #0c0b09;
+  background: white;
   border-color: #625b4b;
-  color: white;
+  color: #625b4b;
 }
 .book-a-table .php-email-form input::-moz-placeholder, .book-a-table .php-email-form textarea::-moz-placeholder {
   color: #a49b89;
@@ -1169,7 +1168,7 @@ section {
   background: #cda45e;
   border: 0;
   padding: 10px 35px;
-  color: #fff;
+  color: #625b4b;
   transition: 0.4s;
   border-radius: 50px;
 }
@@ -1225,7 +1224,7 @@ section {
   font-style: italic;
   margin: 0 15px 0 15px;
   padding: 20px 20px 60px 20px;
-  background: #26231d;
+  background: whitesmoke;
   position: relative;
   border-radius: 6px;
   position: relative;
@@ -1238,7 +1237,7 @@ section {
 .testimonials .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(128, 128, 128, 0.612);
   opacity: 1;
 }
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
@@ -1250,8 +1249,8 @@ section {
 --------------------------------------------------------------*/
 .gallery .gallery-item {
   overflow: hidden;
-  border-right: 3px solid #454035;
-  border-bottom: 3px solid #454035;
+  border-right: 3px solid white;
+  border-bottom: 3px solid white;
 }
 .gallery .gallery-item img {
   transition: all ease-in-out 0.4s;
@@ -1418,7 +1417,7 @@ section {
   border-radius: 0;
   box-shadow: none;
   font-size: 14px;
-  background: #0c0b09;
+  background: white;
   border-color: #625b4b;
   color: white;
 }
@@ -1469,16 +1468,19 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: black;
+  background: white;
   padding: 0 0 30px 0;
-  color: #fff;
+  color: #625b4b;
   font-size: 14px;
 }
 #footer .footer-info img {
   max-width: 200px;
+  /* color: red; */
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.85);
 }
 #footer .footer-top {
-  background: #0c0b09;
+  background: white;
   border-top: 1px solid #37332a;
   border-bottom: 1px solid #28251f;
   padding: 60px 0 30px 0;
@@ -1500,7 +1502,7 @@ section {
   line-height: 24px;
   margin-bottom: 0;
   /* font-family: "Playfair Display", serif; */
-  color: #fff;
+  color: #625b4b;
 }
 #footer .footer-top .social-links a {
   font-size: 18px;
@@ -1524,7 +1526,7 @@ section {
 #footer .footer-top h4 {
   font-size: 16px;
   font-weight: 600;
-  color: #fff;
+  color: #625b4b;
   position: relative;
   padding-bottom: 12px;
 }
@@ -1551,7 +1553,7 @@ section {
   padding-top: 0;
 }
 #footer .footer-top .footer-links ul a {
-  color: #fff;
+  color: #625b4b;
   transition: 0.3s;
   display: inline-block;
   line-height: 1;
@@ -1561,7 +1563,7 @@ section {
 }
 #footer .footer-top .footer-newsletter form {
   margin-top: 30px;
-  background: #28251f;
+  background: white;
   padding: 6px 10px;
   position: relative;
   border-radius: 50px;
@@ -1571,8 +1573,8 @@ section {
   border: 0;
   padding: 4px;
   width: calc(100% - 110px);
-  background: #28251f;
-  color: white;
+  background: white;
+  color: #625b4b;
 }
 #footer .footer-top .footer-newsletter form input[type=submit] {
   position: absolute;
@@ -1584,7 +1586,7 @@ section {
   font-size: 16px;
   padding: 0 20px 2px 20px;
   background: #cda45e;
-  color: #fff;
+  color: white;
   transition: 0.3s;
   border-radius: 50px;
 }
@@ -1599,5 +1601,5 @@ section {
   padding-top: 10px;
   text-align: center;
   font-size: 13px;
-  color: #fff;
+  color: #625b4b;
 }
