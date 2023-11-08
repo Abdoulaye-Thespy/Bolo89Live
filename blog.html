@@ -169,188 +169,282 @@
          <h2>key aspects of the grid concept </h2>
       </p>
 
-      <p><bold>Grid Container:</bold>
+      <p><bold class="grid-bold">Grid Container:</bold>
         In CSS Grid, a grid container is the parent element that contains a grid layout. It is defined using the 
-        <span> display: grid or display: inline-grid property </span> on the container element. Once a container element
+        <span class="grid-span"> display: grid or display: inline-grid property </span> on the container element. Once a container element
          is defined as a grid container, you can use a variety of properties to control the layout of the grid.
       </p>
+      <br>
 
-      <p><bold>Grid item: </bold>
+      <p><bold class="grid-bold">Grid item: </bold>
         The child elements of the grid container that are placed into the grid. Grid items are positioned using 
         grid lines, which are defined by the grid tracks.
-
       </p>
+      <br>
 
-      <p><bold>Grid line: </bold>
+      <p><bold class="grid-bold">Grid line: </bold>
         A line that divides the grid into rows or columns. Grid lines are numbered from 1 to n, where n is the number 
         of rows or columns in the grid.
-
       </p>
+      <br>
 
-      <p><bold>Grid track: </bold>
+      <p><bold class="grid-bold">Grid track: </bold>
         The space between two adjacent grid lines. Grid tracks can be sized using the 
-       <span> grid-template-columns </span>  and <span> grid-template-rows properties.</span> The space between two-row lines is referred to 
-        as the row tracks and The space between two-column lines is referred to as the column tracks. A size is 
+       <span class="grid-span"> grid-template-columns </span>  and <span class="grid-span"> grid-template-rows properties.</span> The space between
+        two-row lines is referred to as the row tracks and The space between two-column lines is referred to as the column tracks. A size is 
         assigned to these tracks whenever a grid is created.
       </p>
+      <br>
 
-      <p><bold>  Grid cell: </bold>
+      <p><bold class="grid-bold">  Grid cell: </bold>
         The intersection of a row and a column in the grid. Grid cells can contain grid items or be empty.
-
       </p>
+      <br>
 
-      <p><bold>Grid area:</bold>
+      <p><bold class="grid-bold">Grid area:</bold>
         A rectangular area of the grid that can contain one or more grid cells. Grid areas are defined using 
-        the <span>grid-template-areas property.</span>
+        the <span class="grid-span">grid-template-areas property.</span>
       </p>
+      <br>
 
       <h2> CSS Grid Properties </h2>
-      <br>
+      
       <p>There are two main types of CSS Grid properties namely:
-        <bold>Parent properties (Grid Container)</bold>  and <bold>Child Properties (Grid Items).</bold>
+        <br>
+
+        <bold class="grid-bold">Parent properties (Grid Container)</bold>  and <bold class="grid-bold">Child Properties (Grid Items).</bold>
 
         <h4> Parent properties (Grid Container) </h4>
         Grid Container properties are used to define the layout of the grid container itself. These properties are 
         applied to the parent element that contains the grid items. Some examples are:
         <br>
-        <br>
-
-        <bold> - Display:</bold> The display property is used to define the container element as a grid container. 
-        To use the display with CSS Grid, set the value to grid. This will turn the container element into a grid 
+         
+        <p>
+        <bold class="grid-bold"> - Display:</bold> The display property is used to define the container element as a 
+        grid container. To use the display with CSS Grid, set the value to grid. This will turn the container element into a grid 
         container, allowing you to use other grid properties to define the grid layout. 
         
-      <br>
-      <br>
-
-      <bold>- grid-template-columns & grid-template-rows: </bold> grid-template-columns and grid-template-rows are used to define the size and 
-      position of columns and rows in a CSS grid. These properties allow you to create a flexible and responsive grid layout that can adjust 
+      </p>
+        
+      <p>
+      <bold class="grid-bold">- grid-template-columns & grid-template-rows: </bold> grid-template-columns and 
+      grid-template-rows are used to define the size and position of columns and rows in a CSS grid. These properties 
+      allow you to create a flexible and responsive grid layout that can adjust 
       to different screen sizes and content.
       the values represent the track size, and the space between them is the grid line. We can then place elements inside the grid by using 
       the grid-column and grid-row properties.
 
-      <br>
-      <br>
+      </p>
 
-      <bold>- grid-template-areas: </bold> grid-template-areas allows you to define the layout of a grid by assigning 
+       <p>
+      <bold class="grid-bold">- grid-template-areas: </bold> grid-template-areas allows you to define the layout of a grid by assigning 
       names to areas within the grid. These names are used in the grid-area property to place items within the grid.
 
-      <br>
-      <br>
+    </p>
+      
+    <p>
+      <bold  class="grid-bold">- grid-template: </bold> grid-template is a shorthand property in CSS Grid that allows 
+      you to define both the number and size of grid columns and rows in one declaration.
 
-      <bold>- grid-template: </bold> grid-template is a shorthand property in CSS Grid that allows you to define both the number and size 
-      of grid columns and rows in one declaration.
-
-      <br>
-      <br>
-
-      <bold> -  column-gap, row-gap </bold> column-gap and row-gap define the space between columns and rows, respectively.
+      </p>
+       
+      <p>
+      <bold  class="grid-bold"> -  column-gap, row-gap </bold> column-gap and row-gap define the space between columns and rows, respectively.
       We have a grid container with three columns and two rows.
 
-      <br>
-      <br>
-
-      <bold> -grid-gap </bold> grid-gap is a shorthand property in CSS grid layout that allows you to specify the gap between grid 
-      columns and rows at the same time.
-
-      <bold> - justify-items </bold> justify-items is a CSS Grid property that defines how the grid items are aligned along the main 
-      axis (the horizontal axis) within their grid container. It is used to control the positioning of items in the grid container when
-       there is extra space available in the main-axis direction.
+     </p>
+ 
+      <p>
+      <bold  class="grid-bold"> -grid-gap </bold> grid-gap is a shorthand property in CSS grid layout that allows you 
+      to specify the gap between grid columns and rows at the same time.
+      </p>
+       
+      <p>
+      <bold  class="grid-bold"> - justify-items </bold> justify-items is a CSS Grid property that defines how the 
+      grid items are aligned along the main axis (the horizontal axis) within their grid container. It is used to 
+      control the positioning of items in the grid container when there is extra space available in the main-axis direction.
        <br>
       Here are the possible values for justify-items in CSS Grid:
-     
-      <bold>- stretch (default):</bold> This value stretches the grid items to fill the available space along the main-axis.
-      <bold> - start: </bold>This value aligns the grid items along the start edge of the grid container in the main-axis direction.
-      <bold> - end:</bold> This value aligns the grid items along the end edge of the grid container in the main-axis direction.
-      <bold> - center:</bold> This value centers the grid items along the main axis of the grid container.
+      </p>
 
-      <bold> - align-items </bold> align-items defines how the grid items are aligned along the cross-axis (the vertical axis) within 
+      <p>
+      <bold  class="grid-bold">- stretch (default):</bold> This value stretches the grid items to fill the available 
+      space along the main-axis.
+      
+      </p>
+       
+      <p>
+      <bold  class="grid-bold"> - start: </bold>This value aligns the grid items along the start edge of the grid 
+      container in the main-axis direction.
+      </p>
+       
+      <p>
+      <bold  class="grid-bold"> - end:</bold> This value aligns the grid items along the end edge of the grid container in the main-axis 
+      direction.
+      </p>
+      
+      <p>
+      <bold  class="grid-bold"> - center:</bold> This value centers the grid items along the main axis of the grid container.
+       </p>
+ 
+       <p>
+      <bold  class="grid-bold"> - align-items </bold> align-items defines how the grid items are aligned along the cross-axis (the vertical axis) within 
       their grid container. It is used to control the positioning of items in the grid container when there is extra space available in
        the cross-axis direction. Here are the possible values for align-items in CSS Grid:
-       <br>
+       </p>
 
-      <bold> -stretch (default):</bold> This value stretches the grid items to fill the available space along the cross-axis.
-      <bold>-start: </bold> This value aligns the grid items along the start edge of the grid container in the cross-axis direction.
-      <bold>- end: </bold> This value aligns the grid items along the end edge of the grid container in the cross-axis direction.
-     <bold>-center: </bold>  This value centers the grid items along the cross-axis of the grid container.
-     <br>
+       <p>
+      <bold  class="grid-bold"> -stretch (default):</bold> This value stretches the grid items to fill the available space along the cross-axis.
+      </p>
 
-    <bold>-place-items</bold> 
-     place-items is a shorthand CSS Grid property that combines the align-items and justify-items properties into a single declaration. 
-     It is used to set both the horizontal and vertical alignment of grid items within their grid container.
-      The possible value for place-items in CSS Grid is:
-      <align-items> <justify-items>: This value specifies the alignment for the vertical and horizontal axes respectively. You can use any 
-        of the possible values for align-items and justify-items to set the alignment for each axis.
+      <p>
+      <bold  class="grid-bold">-start: </bold> This value aligns the grid items along the start edge of the grid container in the cross-axis direction.
+      </p>
+        
+      <p>
+      <bold  class="grid-bold">- end: </bold> This value aligns the grid items along the end edge of the grid container in the cross-axis direction.
+      </p>
 
-        <bold>- justify-content</bold>
+      <p>
+      <bold  class="grid-bold">-center: </bold>  This value centers the grid items along the cross-axis of the grid container.
+      </p>
+        
+      <p>
+        <bold class="grid-bold">-place-items</bold> 
+        place-items is a shorthand CSS Grid property that combines the align-items and justify-items properties into a single declaration. 
+        It is used to set both the horizontal and vertical alignment of grid items within their grid container.
+          The possible value for place-items in CSS Grid is:
+          <span class="grid-span"> <align-items> <justify-items>:</span> This value specifies the alignment for the vertical
+            and horizontal axes respectively. You can use any 
+            of the possible values for align-items and justify-items to set the alignment for each axis.
+            </p>
+
+            <p>
+        <bold class="grid-bold">- justify-content</bold>
         justify-content defines how the grid items are aligned along the main axis (the horizontal axis) within their grid container. It is used to control the positioning of the grid container along the main axis when extra space is available in that direction.
         Here are the possible values for justify-content in CSS Grid:
-        <br>
-        <bold> - start (default):</bold> This value aligns the grid container along the start edge of the main axis.
-       <bold> - end:</bold>  This value aligns the grid container along the end edge of the main axis.
-       <bold>  - center:</bold> This value centers the grid container along the main axis.
-        <bold> - space-between: </bold> This value evenly distributes the grid items along the main axis, with the first item at the start 
-        edge and the last item at the end edge.
-       <bold>  - space-around: </bold> This value evenly distributes the grid items along the main axis, with equal space between each item 
-       and half that space at the start and end edges.
-        <bold> - space-evenly:</bold> This value evenly distributes the grid items along the main axis, with equal space between each item 
-        and at the start and end edges.
+        </p>
+         
+        <p>
+        <bold class="grid-bold"> - start (default):</bold> This value aligns the grid container along the start edge of the main axis.
+        </p>
 
-        <bold>- align-content </bold> align-content is a CSS Grid property that defines how the grid items are aligned along the 
+        <p>
+        <bold class="grid-bold"> - end:</bold>  This value aligns the grid container along the end edge of the main axis.
+        </p>
+        <br>
+
+        <p>
+       <bold class="grid-bold">  - center:</bold> This value centers the grid container along the main axis.
+       </p>
+
+       <p>
+        <bold class="grid-bold"> - space-between: </bold> This value evenly distributes the grid items along the main axis, with the first item at the start 
+        edge and the last item at the end edge.
+        </p>
+
+        <p>
+       <bold class="grid-bold">  - space-around: </bold> This value evenly distributes the grid items along the main axis, with equal space between each item 
+       and half that space at the start and end edges.
+       </p>
+
+       <p>
+        <bold class="grid-bold"> - space-evenly:</bold> This value evenly distributes the grid items along the main axis, with equal space between each item 
+        and at the start and end edges.
+        </p>
+
+        <p>
+        <bold class="grid-bold">- align-content </bold> align-content is a CSS Grid property that defines how the grid items are aligned along the 
         cross-axis (the vertical axis) within their grid container. It is used to control the positioning of the grid container 
         itself along the cross-axis when there is extra space available in that direction.
         Here are the possible values for align-content in CSS Grid:
-        <br>
-       <bold>  - stretch (default):</bold> stretches the grid items to fill the available space along the cross-axis.
-        <bold> - start:</bold> aligns the grid container along the start edge of the cross-axis.
-       <bold>  - end:</bold> aligns the grid container along the end edge of the cross-axis.
-       <bold>  - center:</bold> centers the grid container along the cross-axis.
-       <bold>  - space-between:</bold> evenly distributes the grid items along the cross-axis, with the first item at the start edge and the 
-       last item at the end edge.
-       <bold>  - space-around:</bold> evenly distributes the grid items along the cross-axis, with equal space between each item and half 
-       that space at the start and end edges.
-        <bold> - space-evenly:</bold> evenly distributes the grid items along the cross-axis, with equal space between each item and at the 
-        start and end edges.
+        </p>
 
-        <bold> -place-content</bold>
+        <p>
+       <bold class="grid-bold">  - stretch (default):</bold> stretches the grid items to fill the available space along the cross-axis.
+        </p>
+
+        <p>
+       <bold class="grid-bold"> - start:</bold> aligns the grid container along the start edge of the cross-axis.
+       </p>
+
+       <p>
+       <bold class="grid-bold">  - end:</bold> aligns the grid container along the end edge of the cross-axis.
+       </p>
+
+       <p>
+       <bold class="grid-bold">  - center:</bold> centers the grid container along the cross-axis.
+       </p>
+
+       <p>
+       <bold class="grid-bold">  - space-between:</bold> evenly distributes the grid items along the cross-axis, with the first item at 
+       the start edge and the last item at the end edge.
+       </p>
+
+       <p>
+       <bold class="grid-bold">  - space-around:</bold> evenly distributes the grid items along the cross-axis, with equal space 
+       between each item and half that space at the start and end edges.
+       </p>
+
+       <p>
+        <bold class="grid-bold"> - space-evenly:</bold> evenly distributes the grid items along the cross-axis, with equal space between each item and at the 
+        start and end edges.
+        </p>
+
+        <p>
+        <bold class="grid-bold"> -place-content</bold>
         The place-content property in CSS grid allows you to align and justify grid items along both the horizontal and vertical axes.
          Here is an example of how to use place-content:
+         </p>
 
-        
-         <bold> - grid-auto-columns & grid-auto-rows</bold>grid-auto-columns and grid-auto-rows are properties that allow you to define the
+         <p>
+         <bold class="grid-bold"> - grid-auto-columns & grid-auto-rows</bold>grid-auto-columns and grid-auto-rows are properties that allow you to define the
           size of rows and columns that are created automatically to fill the grid container. These properties come into play when there 
           are more grid items than cells in the explicit grid, which means that some cells are created automatically to accommodate the 
           additional items.
-          
-          <br>
-           <bold> -grid-auto-flow</bold>It specifies how the grid container should automatically place grid items that don't have a 
+          </p>
+
+          <p>
+           <bold class="grid-bold"> -grid-auto-flow</bold>It specifies how the grid container should automatically place grid items that don't have a 
            specific grid position set.The possible values for grid-auto-flow are
-           <boldd>- row:</boldd> This is the default value, and it means that the auto-placement algorithm should place items in rows, 
+           </p>
+
+           <p>
+           <bold>- row:</boldd> This is the default value, and it means that the auto-placement algorithm should place items in rows, 
            filling up each row before moving on to the next one.
-             <bold> - column:</bold> This value specifies that the auto-placement algorithm should place items in columns, 
+           </p>
+
+           <p>
+             <bold class="grid-bold"> - column:</bold> This value specifies that the auto-placement algorithm should place items in columns, 
              filling up each column before moving on to the next one.
-             <bold> - dense:</bold> This value tells the auto-placement algorithm to try to fill in any empty cells as it goes along, 
+             </p>
+
+             <p>
+             <bold class="grid-bold" > - dense:</bold> This value tells the auto-placement algorithm to try to fill in any empty cells as it goes along, 
              rather than leaving them empty and moving on to the next row or column. This can result in items being placed in unexpected 
              locations, but it can also help to fill the grid more efficiently.
+             </p>
 
-             <br>
-             <br>
-
-              <bold> -grid</bold>
+             <p>
+              <bold class="grid-bold"> -grid</bold>
                   The grid property is the shorthand for setting all of the below properties in a single declaration.
-                  <br>
-                  grid-template-rows 
-                  <br>
-                  grid-template-columns
-                  <br>
-                  grid-template-areas
-                  <br>
-                  grid-auto-rows
-                  <br>
-                  grid-auto-columns
-                  <br>
-                  grid-auto-flow
+                  </p>
 
                   <br>
+
+                  <ul>
+                    <li class="grid-span">grid-template-rows</li>
+                    <br>
+                    <li class="grid-span"> grid-template-columns</li>
+                    <br>
+                    <li class="grid-span">grid-template-areas</li>
+                    <br>
+                    <li class="grid-span"> grid-auto-rows</li>
+                    <br>
+                    <li class="grid-span">grid-auto-columns</li>
+                    <br>
+                    <li class="grid-span">grid-auto-flow</li>
+                  </ul>
       </p>
 
       <h4> Child Properties (Grid Items) </h4>
@@ -360,7 +454,8 @@
         grid-column-end, grid-row-start, and grid-row-end, Grid-column and grid-row, grid-area, justify-self, align-self, and place-self
         <br>
         <br>
-        <bold> grid-column-start, grid-column-end, grid-row-start & grid-row-end</bold>
+
+        <bold class="grid-bold"> grid-column-start, grid-column-end, grid-row-start & grid-row-end</bold>
         <br>
         The properties grid-column-start, grid-column-end, grid-row-start, and grid-row-end are used to specify the location of a grid item 
         within the grid container.
@@ -377,7 +472,8 @@
          <br>
          <br>
 
-         <bold>  grid-column & grid-row </bold>
+         <bold class="grid-bold">  grid-column & grid-row </bold>
+         <br>
          <br>
          The grid-column and grid-row properties specify a grid item's location within a grid container. When using these properties on a 
          child grid item, you can define the starting and ending grid lines on the horizontal (for grid-column) and vertical (for grid-row) 
@@ -386,41 +482,57 @@
 
          <br>
 
-         <bold> grid-area </bold>
-         <br>
+         <p>
+         <bold class="grid-bold"> grid-area </bold> 
+         
          The grid-area property is used to assign a grid item to a named grid area, specified by the grid-template-areas property 
          on the parent container. To use grid-area, you need to follow these steps:
          <br>
+         <br>
          Define the grid layout on the parent container using the grid-template-areas, grid-template-rows, and grid-template-columns properties.
+         <br>
          <br>
          Assign a name to each grid area using the grid-area property on the child items. The name should correspond to the name you 
          defined in the grid-template-areas property.
          <br>
+         <br>
          Set the position and size of the grid item using the grid-row-start, grid-row-end, grid-column-start, and grid-column-end properties.
+         <br>
          <br>
          image
          In this example, we have a container with a grid layout that defines three rows and two columns, and three named grid areas. 
          Each child item is assigned to a grid area using the grid-area property, and its position and size are set using the grid-row-start, 
          grid-row-end, grid-column-start, and grid-column-end properties.
          <br>
+         </p>
 
-         <bold> justify-self, align-self & place-self </bold>
+          <p>
+         <bold class="grid-bold"> justify-self, align-self & place-self </bold> 
          The justify-self, align-self, and place-self properties are used to control the alignment and placement of grid items 
          within their grid cells. These properties are applied to individual grid items, rather than to the grid container as a whole.
          Here's a brief explanation of each property:
          <br>
-         <br>
-         <bold> -justify-self:</bold> This property controls the horizontal alignment of a grid item within its cell. It can take values
-          like start, end, center, stretch, and auto.
+         </p>
+         
+         <p>
+         <bold class="grid-bold"> -justify-self:</bold> This property controls the horizontal alignment of a grid item 
+         within its cell. It can take values like start, end, center, stretch, and auto.
           <br>
-          <bold> -align-self:</bold> This property controls the vertical alignment of a grid item within its cell. It can take values like 
+          </p>
+
+          <p>
+          <bold class="grid-bold"> -align-self:</bold> This property controls the vertical alignment of a grid item within its cell. It can take values like 
           start, end, center, stretch, and auto.
           <br>
-          <bold> -place-self:</bold>This is a shorthand property that combines justify-self and align-self into a single declaration. 
+          </p>
+
+          <p>
+          <bold class="grid-bold"> -place-self:</bold> This is a shorthand property that combines justify-self and align-self into a single declaration. 
           It takes two values, the first for horizontal alignment and the second for vertical alignment, separated by a space.
-
           <br>
+          </p>
 
+          <p>
           using display: flex, justify-content, and align-items. The justify-self, align-self, and place-self properties are then used
            to control the alignment of individual items within their cells. The first item is aligned to the start of its cell horizontally 
            using justify-self: start. The second item is aligned to the end of its cell vertically using align-self: end. The third item is 
@@ -431,18 +543,25 @@
       <h4> Tricks while using CSS Grids</h4>
       <p>To create more flexible and maintainable CSS grids, you can use these tricks to simplify your code.
         <br>
-        - Use the repeat() function to simplify grid templates: example; Instead of this <span> grid-template-columns: 1fr 1fr 1fr 1fr 1fr;</span>
-        Use the repeat() function for cleaner code <span> grid-template-columns: repeat(5, 1fr);</span>
+        <br>
+        - Use the repeat() function to simplify grid templates: example; Instead of this <span class="grid-span"> grid-template-columns: 1fr 1fr 1fr 1fr 1fr;</span>
+        Use the repeat() function for cleaner code <span class="grid-span"> grid-template-columns: repeat(5, 1fr);</span>
+        <br>
         <br>
         -  Use auto-fit or auto-fill to create flexible grids: example; This grid will automatically create as many columns as will fit in the container
-        <span> grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); </span> .  This grid will always create 3 columns, and will fill any extra space 
-        with empty cells <span> grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));</span>
+        <span class="grid-span"> grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); </span> .  This grid will always create 3 columns, and will fill any extra space 
+        with empty cells <span class="grid-span"> grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));</span>
         <br>
-        -  Use grid-gap to add spacing between grid items: example; This grid will have a 20px gap between grid items  <span> grid-gap: 20px;</span>
+        <br>
+        -  Use grid-gap to add spacing between grid items: example; This grid will have a 20px gap between grid items  
+        <span class="grid-span"> grid-gap: 20px;</span>
+         <br>
          <br>
          -  Use grid-template-areas to create named grid areas
          <br>
+         <br>
          - Creating a responsive grid with media queries
+         <br>
          <br>
          - Nesting grids for more complex layouts
          <br>
@@ -454,7 +573,7 @@
          powerful tool that can greatly enhance your web design skills. Embrace its structure, experiment with different layouts, and enjoy 
          the creative possibilities it offers.
          <br>
-         Happy Codding!!
+        <bold class="grid-bold"> Happy Codding!!</bold>
 
       </p>
 

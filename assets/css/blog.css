@@ -97,3 +97,21 @@ margin: 0;
   font-size: 2rem;
   color: rgb(253, 141, 100);
 }
+
+.grid-span {
+  background-color: rgba(253, 141, 100, 0.4);
+  font-weight: 600;
+}
+
+.grid-bold {
+  color: rgb(253, 141, 100);
+  font-weight: 500;
+  font-size: 1.5rem;
+
+}
+
+.first-div h4 {
+  font-weight: 700;
+  font-size: 1.7rem;
+  color: rgb(253, 141, 100);
+}
