@@ -102,10 +102,13 @@
   <section class="container-lg" id="main-section">
     <div class="content-box">
       <h2>Table of Contents </h2>
+      <ol class="order-list">
+        <li><a href="#grid">Grid: A Powerful Tool for Web Layout Design</a></li>
+      </ol>
 
     </div>
 
-    <div class="first-div">
+    <div class="first-div" id="grid">
       <h2>Grid: A Powerful Tool for Web Layout Design</h2>
       <p>In the world of web design, creating visually appealing and well-structured layouts is crucial. One effective 
         tool that has revolutionized the way websites are designed is the CSS grid. With its flexible and intuitive nature,
@@ -125,14 +128,17 @@
             One of the key benefits of using a grid system is its ability to create responsive layouts. Grids provide a 
             flexible structure that automatically adapts to different screen sizes and devices, ensuring consistent and
              visually appealing designs across various platforms.</li>
+             <br>
 
              <li>Grids help maintain consistency in design by providing a systematic framework. With grid-based layouts,
               designers can organize content elements in a harmonious and structured manner, making it easier for users 
               to navigate and understand the website's information hierarchy.</li>
+              <br>
 
               <li> Designers can easily align and position elements on the grid, reducing the time spent on manual 
                 adjustments. This efficiency allows designers to focus more on creativity and refining the overall user 
                 experience.</li>
+                <br>
 
                 <li>Grids offer flexibility in terms of layout variations. Designers can experiment with different grid 
                   configurations to create unique and engaging designs.</li>
@@ -143,14 +149,17 @@
          <ul>
           <li>Grids are commonly used in magazine-style designs where content is presented in a grid-like structure. 
             This allows for easy placement of articles, images, and other elements in a visually pleasing manner.</li>
+            <br>
 
             <li>Grids provide an excellent foundation for creating portfolio websites. Designers can use the grid system
                to showcase their work in a clean and organized manner, making it easier for visitors to navigate through
                 different projects.</li>
+                <br>
 
                 <li>Grids are ideal for displaying product listings in e-commerce websites. By using a grid, designers
                    can arrange product images, titles, prices, and other details in a consistent and visually appealing 
                    manner, enhancing the overall shopping experience.</li>
+                   <br>
 
                    <li>Also, think of a webpage and how there's usually a navigation bar, a sidebar, and the content in 
                     the middle. A CSS Grid helps achieve that sort of styling easily by dividing up the page into 
@@ -158,7 +167,6 @@
          </ul>
 
          <h2>key aspects of the grid concept </h2>
-         <br>
       </p>
 
       <p><bold>Grid Container:</bold>
@@ -312,23 +320,145 @@
           size of rows and columns that are created automatically to fill the grid container. These properties come into play when there 
           are more grid items than cells in the explicit grid, which means that some cells are created automatically to accommodate the 
           additional items.
+          
+          <br>
+           <bold> -grid-auto-flow</bold>It specifies how the grid container should automatically place grid items that don't have a 
+           specific grid position set.The possible values for grid-auto-flow are
+           <boldd>- row:</boldd> This is the default value, and it means that the auto-placement algorithm should place items in rows, 
+           filling up each row before moving on to the next one.
+             <bold> - column:</bold> This value specifies that the auto-placement algorithm should place items in columns, 
+             filling up each column before moving on to the next one.
+             <bold> - dense:</bold> This value tells the auto-placement algorithm to try to fill in any empty cells as it goes along, 
+             rather than leaving them empty and moving on to the next row or column. This can result in items being placed in unexpected 
+             locations, but it can also help to fill the grid more efficiently.
 
-        
-        
-        
+             <br>
+             <br>
 
-      
-      
+              <bold> -grid</bold>
+                  The grid property is the shorthand for setting all of the below properties in a single declaration.
+                  <br>
+                  grid-template-rows 
+                  <br>
+                  grid-template-columns
+                  <br>
+                  grid-template-areas
+                  <br>
+                  grid-auto-rows
+                  <br>
+                  grid-auto-columns
+                  <br>
+                  grid-auto-flow
 
+                  <br>
+      </p>
 
+      <h4> Child Properties (Grid Items) </h4>
 
+      <p>
+        Child properties are the CSS properties applied to the individual child elements of grid items. They are: grid-column-start, 
+        grid-column-end, grid-row-start, and grid-row-end, Grid-column and grid-row, grid-area, justify-self, align-self, and place-self
+        <br>
+        <br>
+        <bold> grid-column-start, grid-column-end, grid-row-start & grid-row-end</bold>
+        <br>
+        The properties grid-column-start, grid-column-end, grid-row-start, and grid-row-end are used to specify the location of a grid item 
+        within the grid container.
 
+        image here
 
+        <br>
+        The grid-column-start and grid-column-end properties are used to specify the start and end positions of the grid item along the
+         horizontal axis (columns). For example, the grid-column-start value of 1 and grid-column-end value of 3 for the .item-1 class 
+         specifies that the grid item should start at column 1 and end at column 3. Similarly, the grid-row-start and grid-row-end properties 
+         are used to specify the start and end positions of the grid item along the vertical axis (rows). For example, the grid-row-start 
+         value of 1 and grid-row-end value of 2 for the .item-1 class specifies that the grid item should start at row 1 and end at row 2.
+
+         <br>
+         <br>
+
+         <bold>  grid-column & grid-row </bold>
+         <br>
+         The grid-column and grid-row properties specify a grid item's location within a grid container. When using these properties on a 
+         child grid item, you can define the starting and ending grid lines on the horizontal (for grid-column) and vertical (for grid-row) 
+         axes to determine the position and size of the item in the grid. You can adjust the values of grid-column and grid-row to position 
+         your grid items as desired within the grid container.
+
+         <br>
+
+         <bold> grid-area </bold>
+         <br>
+         The grid-area property is used to assign a grid item to a named grid area, specified by the grid-template-areas property 
+         on the parent container. To use grid-area, you need to follow these steps:
+         <br>
+         Define the grid layout on the parent container using the grid-template-areas, grid-template-rows, and grid-template-columns properties.
+         <br>
+         Assign a name to each grid area using the grid-area property on the child items. The name should correspond to the name you 
+         defined in the grid-template-areas property.
+         <br>
+         Set the position and size of the grid item using the grid-row-start, grid-row-end, grid-column-start, and grid-column-end properties.
+         <br>
+         image
+         In this example, we have a container with a grid layout that defines three rows and two columns, and three named grid areas. 
+         Each child item is assigned to a grid area using the grid-area property, and its position and size are set using the grid-row-start, 
+         grid-row-end, grid-column-start, and grid-column-end properties.
+         <br>
+
+         <bold> justify-self, align-self & place-self </bold>
+         The justify-self, align-self, and place-self properties are used to control the alignment and placement of grid items 
+         within their grid cells. These properties are applied to individual grid items, rather than to the grid container as a whole.
+         Here's a brief explanation of each property:
+         <br>
+         <br>
+         <bold> -justify-self:</bold> This property controls the horizontal alignment of a grid item within its cell. It can take values
+          like start, end, center, stretch, and auto.
+          <br>
+          <bold> -align-self:</bold> This property controls the vertical alignment of a grid item within its cell. It can take values like 
+          start, end, center, stretch, and auto.
+          <br>
+          <bold> -place-self:</bold>This is a shorthand property that combines justify-self and align-self into a single declaration. 
+          It takes two values, the first for horizontal alignment and the second for vertical alignment, separated by a space.
+
+          <br>
+
+          using display: flex, justify-content, and align-items. The justify-self, align-self, and place-self properties are then used
+           to control the alignment of individual items within their cells. The first item is aligned to the start of its cell horizontally 
+           using justify-self: start. The second item is aligned to the end of its cell vertically using align-self: end. The third item is 
+           centered both horizontally and vertically using place-self: center stretch, which sets the horizontal alignment to center and the 
+           vertical alignment to stretch.
+      </p>
+
+      <h4> Tricks while using CSS Grids</h4>
+      <p>To create more flexible and maintainable CSS grids, you can use these tricks to simplify your code.
+        <br>
+        - Use the repeat() function to simplify grid templates: example; Instead of this <span> grid-template-columns: 1fr 1fr 1fr 1fr 1fr;</span>
+        Use the repeat() function for cleaner code <span> grid-template-columns: repeat(5, 1fr);</span>
+        <br>
+        -  Use auto-fit or auto-fill to create flexible grids: example; This grid will automatically create as many columns as will fit in the container
+        <span> grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); </span> .  This grid will always create 3 columns, and will fill any extra space 
+        with empty cells <span> grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));</span>
+        <br>
+        -  Use grid-gap to add spacing between grid items: example; This grid will have a 20px gap between grid items  <span> grid-gap: 20px;</span>
+         <br>
+         -  Use grid-template-areas to create named grid areas
+         <br>
+         - Creating a responsive grid with media queries
+         <br>
+         - Nesting grids for more complex layouts
+         <br>
+         <br>
+
+         To conclude, it is important to understand the basic principles of grids and practice working with them. Start by experimenting 
+         with simple grid structures and gradually explore more complex layouts. Familiarize yourself with CSS grid systems and frameworks 
+         that provide ready-to-use grid structures, making it easier to implement grids in your designs. Remember, the grid concept is a 
+         powerful tool that can greatly enhance your web design skills. Embrace its structure, experiment with different layouts, and enjoy 
+         the creative possibilities it offers.
+         <br>
+         Happy Codding!!
 
       </p>
 
     </div>
-    
     
   </section>
 
