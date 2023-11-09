@@ -163,6 +163,7 @@ margin: 0;
     left: 18rem;
   }
 
+
 }
 
 /* mobile responsive */
@@ -254,6 +255,7 @@ margin: 0;
     left: 3rem;
     height: 12%;
     top: 7rem;
+    /* top: 1116rem; */
   }
 
   .order-list {
