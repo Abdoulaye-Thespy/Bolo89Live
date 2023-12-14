@@ -2,6 +2,11 @@
 padding: 0;
 margin: 0;
 }
+.long-long {
+  width: 100%;
+  border-bottom: 5px #cda45e;
+  color: #cda45e;
+}
 
 
 .blog-image {
@@ -168,6 +173,13 @@ margin: 0;
 
 /* mobile responsive */
 @media screen and (max-width: 768px) {
+
+  .long-long {
+    width: 100%;
+    border-bottom: 5px #cda45e;
+    color: #cda45e;
+    height: 5px;
+  }
 
   .mobile-nav-toggle {
     display: block;
