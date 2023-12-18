@@ -8,7 +8,9 @@
 }
 
 .navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
-  color: rgb(4, 61, 4);
+  color: #A66953;
+  border-bottom: none;
+  text-decoration: none;
 }
 
 .navbar a, .navbar a:focus {
@@ -18,7 +20,7 @@
   padding: 10px 0 10px 30px;
   color: rgb(4, 61, 4);
   white-space: nowrap;
-  transition: 0.3s;
+  transition: 0.3s; 
   font-size: 14px;
 }
 
@@ -307,9 +309,9 @@
     align-items: center;
   }
 
-  .navbar li:hover {
+  /* .navbar li:hover {
     border-bottom: 2px solid #A66953;
-  }
+  } */
 
   .book-a-table-btn:hover {
     background: #A66953;
@@ -406,6 +408,10 @@
   .apply-now a {
     color: #fff;
    
+  }
+
+  .second-apply {
+    margin-left: 4rem;
   }
 
   .col-4 {
@@ -543,10 +549,6 @@
   font-size: 14px;
 }
 
-#hambuger-button {
-  background: blue;
-}
-
 .navbar-mobile {
   position: fixed;
   overflow: hidden;
@@ -581,11 +583,6 @@
   padding: 10px 20px;
   font-size: 15px;
   color: #1a1814;
-}
-
-#ul {
-  display: none;
-  z-index: 9999;
 }
 
 #ul li {
