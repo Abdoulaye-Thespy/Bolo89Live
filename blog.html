@@ -19,13 +19,13 @@
     rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <!-- <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet"> -->
-  <!-- <link href="assets/vendor/aos/aos.css" rel="stylesheet"> -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <!-- <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet"> -->
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
      <link href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" rel="stylesheet">
       <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
@@ -78,19 +78,20 @@
       <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
       <nav id="navbar" class="navbar order-last order-lg-0">
-        <ul>
-          <!-- <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#menu">Services</a></li>
-          <li><a class="nav-link scrollto" href="#events">Events</a></li>
-          <li><a class="nav-link scrollto" href="#career">Career</a></li>
-          <li><a class="nav-link scrollto" href="#gallery">Gallery</a></li>
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li> -->
+        <ul id="ul">
+          <li><a class="nav-link scrollto active" href="index.html#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="index.html#about">About</a></li>
+          <li><a class="nav-link scrollto" href="index.html#menu">Services</a></li>
+          <li><a class="nav-link scrollto" href="index.html#blog">Blog</a></li>
+          <li><a class="nav-link scrollto" href="index.html#events">Events</a></li>
+          <li><a class="nav-link scrollto" href="index.html#career">Career</a></li>
+          <li><a class="nav-link scrollto" href="index.html#gallery">Gallery</a></li>
+          <li><a class="nav-link scrollto" href="index.html#contact">Contact</a></li>
+
         </ul>
         
-        <i class="bi bi-list mobile-nav-toggle"></i>
+        <i class="bi bi-list mobile-nav-toggle" id="hambuger-button"></i>
       </nav><!-- .navbar -->
-      <a class="home-blog" href="index.html">Home</a>
 
       <a href="#book-a-table" class="book-a-table-btn scrollto d-none d-lg-flex">Book an office</a>
 
@@ -102,12 +103,252 @@
     <div class="content-box">
       <h2>Table of Contents </h2>
       <ol class="order-list">
+        <li><a href="#grid">Introduction To Git And Github</a></li>
         <li><a href="#grid">Grid: A Powerful Tool for Web Layout Design</a></li>
       </ol>
 
     </div>
 
     <div class="first-div" id="grid">
+
+      
+        <h2>Introduction To Git and Github</h2>
+        <br>
+        <p>In the past, developers used to write code and save it on their local machines. If they needed to
+           share their source code or project, they would typically use an external USB drive. The process 
+           involved transferring the code onto the USB drive, disconnecting it, and then connecting it to 
+           the computer they wished to share the code or project with. However, this method had many setbacks
+            and limitations.
+            <br>
+          Fortunately, as technology advanced, Git and GitHub were introduced to simplify and facilitate 
+          this process.Git and GitHub emerged as solutions to simplify and enhance the process of sharing 
+          code and collaborating on projects. 
+          <br>
+          <br>
+          Git was developed in 2005, which allows developers to track changes, manage versions,
+           and collaborate efficiently in a distributed version control system.
+           This means that Git can track the state of different versions of your projects while 
+           you're developing them. It is distributed because you can access your code files from 
+           another computer – and so can other developers.
+           Git is open source because its source code is made freely available for anyone to modify and use,
+            aside from its creator. Open-source projects are built and maintained collectively by 
+            different developers in different locations.
+            When you're building an open source project, you'll need a way to document or track your code.
+             This helps make your work organized, and lets you keep track of the changes you've made. 
+             This is what Git lets you do.
+             Git also allows for non-linear development by allowing developers to work on different 
+             branches of code simultaneously and merge them together when ready.
+             <br>
+             <br>
+             <h3>Basic Git Commands  </h3>
+             A Git command is a string of text that tells Git what to do. Each Git command does a different
+              task, but they all work together to help developers manage their code changes.
+              <br>
+              Git is typically used through the command line. The Git command line interface (CLI) is a 
+              tool for running these commands. The Git command line tool is installed by default on macOS and 
+              Linux and can be easily installed on Windows.
+              <br>
+              <br>
+              Once you have Git installed, you can clone an existing repository or create a new one. 
+              To clone a repository, you will need the URL of the git repository. To create a new git 
+              repository, use the git init command.
+              Once you have a git repository, you can add files to it and commit changes.
+               For instance, to add a file to a git repository, use the git add command. 
+               To commit changes, use the git commit command.
+               While Git is a powerful tool, it can be challenging to use if you're not familiar with 
+               the command line. That's where GitHub comes in. In fact, GitHub is built on Git.
+          </p>
+  
+          <p><bold class="grid-bold">Git Init:</bold>
+            Initialize a new git repository. It is the first command you run when starting a new project.
+          </p>
+          <br>
+  
+          <p><bold class="grid-bold">Git Clone:</bold>
+            Clone an existing git repository. This command allows you to create a local copy of a remote repository.
+          </p>
+          <br>
+  
+          <p><bold class="grid-bold">Git Add:</bold>
+            Add files to a repository. This command allows you to add new files or changes to already 
+            existing files to a git repository.
+          </p>
+          <br>
+  
+          <p><bold class="grid-bold">Git Commit:</bold>
+            Make changes to a repository. This command saves your changes to the git history.
+          </p>
+          <br>
+  
+          <p><bold class="grid-bold">Git Push:</bold>
+            Push changes to a git remote repository. This command pushes your local commits to a remote 
+            git repository. ie(Github)
+          </p>
+          <br>
+  
+          <p><bold class="grid-bold">Git Pull:</bold>
+            Pull changes from a git remote repository. This command pulls down any remote changes and 
+            incorporates them into your local git repository.. ie(Github)
+          </p>
+          <br>
+  
+          <p><bold class="grid-bold">Git Status:</bold>
+            Check the status of your git repository. This will let you know which files have been modified 
+            and which files are being tracked by git
+          </p>
+          <br>
+  
+          <p><bold class="grid-bold">Git Log:</bold>
+            View the commit history for your git repository. This is useful for finding out when 
+            certain changes were made and who made them.
+          </p>
+          <br>
+  
+          <p><bold class="grid-bold">Git Reset:</bold>
+            Reset your git repository to a specific commit. This command allows you to undo changes to
+             a file or reset your git history
+             <br>
+             <br>
+             Thus If a particular version of a file is in the Git directory, it’s considered committed. 
+             If it has been modified and was added to the staging area, it is staged. 
+             And if it was changed since it was checked out but has not been staged, it is modified.
+          </p>
+          <br>
+  
+          <p>
+          while building your codes, you need a place to host your code (project) inorder to control 
+          each version of your project easier and faster. This is where GitHub comes in.
+          <br>
+           GitHub provides a web-based platform for hosting Git repositories, making it easier for 
+          developers to share, collaborate, and manage their code in a more streamlined and accessible manner.
+          When you're using GitHub, you're working with Git beneath the hood.
+          GitHub allows you to create, store, change, merge, and collaborate on files or code. Any member of
+           a team can access the GitHub repository (think of this as a folder for files) and see the most 
+           recent version in real-time. Then, they can make edits or changes that the other collaborators 
+           also see. GitHub also lets users make requests of one another and internally discuss the 
+           iterations along the way. 
+           <br>
+           <br>
+  
+           GitHub offers both a paid and free subscription. With a free subscription, users can create 
+           public repositories. Public repositories are visible to anyone and can be cloned or forked by 
+           anyone. (A fork is a separate copy of the Git repository that was made. A clone, in contrast, 
+           creates a linked copy that will continue to synchronize with the target repository.) 
+           A paid subscription is required to create private repositories. Private repositories are only 
+           visible to users who have been given access by the repository owner.
+           <br>
+           <br>
+           GitHub offers features such as bug tracking, task management, and project management. In addition
+            to Git repositories, GitHub also provides a platform for developers to share code snippets,
+             issues, and documentation. Developers can also use GitHub to track the progress of their projects.
+             <br>
+             <br>
+  
+             Customizing your GitHub profile README helps you stand out from random GitHub users.
+             The README.md file helps you describe your GitHub profile, and you can use it to show what
+              you're currently learning, the projects you have built or worked on, along with your skills and 
+              contributions. The GitHub README.md uses markdown to format its content. 
+              It has an easy-to-learn syntax.
+  
+              <h3>Connect your GitHub account to your Git account.</h3>
+              After git and Github has been downloaded on your computer, you can connect both of them by 
+              following the methods below. You'll do this from your terminal:
+              <ul>
+                <li>To set your Git username, type this in your terminal:
+                  <span class="grid-bold">git config --global user.name "your user name"</span>
+                </li>
+                <br>
+  
+                <li>To confirm that you have set your Git username correctly, type this:
+                  <span class="grid-bold">git config --global user.name</span>
+                  You should have "your user name" as the output.
+                </li>
+                <br>
+  
+                <li>To set your Git email, type this in your terminal:
+                  <span class="grid-bold">git config --global user.email "youremail@gmail.com"</span>
+                </li>
+                <br>
+  
+                <li>To confirm that you have set your Git email correctly, type this:
+                  <span class="grid-bold">git config --global user.email</span>
+                  You should have "youremail@gmail.com" as the output.
+                </li>
+                <br>
+  
+                <li> To authenticate your GitHub account just sign in with the same email above to confirm.
+                </li>
+                <br>
+  
+                <li>Create a local git repository or repo, which is the Git version of a project folder.
+                   Git will track any changes inside of a repository. Start by creating a directory on your
+                    machine and cd or log into the directory you created.
+                  <span class="grid-bold">mkdir your project name. eg mkdir myProject
+                    <br>
+                    cd your project name. eg cd myProject
+                  </span>
+                </li>
+                <br>
+  
+                <li>Create a new file in your myProject directory named hello.txt
+                 <span class="grid-bold">touch hello.txt</span>
+               </li>
+               <br>
+  
+               <li>The file is now in the directory, but Git won’t officially keep track of the changes of 
+                the new file unless you explicitly tell it to by running the code:
+                <span class="grid-bold">git add name of the file</span>
+              </li>
+              <br>
+  
+              <li>To check the status of the file if it is being tracked by git or not, you run:
+                <span class="grid-bold">git status</span>
+              </li>
+              <br>
+  
+              <li>Once you have one or more changes to the staging area, you can commit them with a message using:
+                <span class="grid-bold">git commit -m 'adds the hello.txt or any commit message'</span>
+                The saved changes are called commits. Each commit has an associated commit message, 
+                which is a description explaining why a particular change was made. Commit messages capture
+                 the history of your changes, so other contributors can understand what you’ve done and why.
+                 Committing cleans the status of the staging area:
+              </li>
+              <br>
+  
+              <li>Committing permanently stores the changes you made into a record store, or shows 
+                the commit history. Which you can see by typing git log command:
+                <span class="grid-bold"> git log</span>
+              </li>
+              <br>
+  
+              <li>To push the changes to github ,or to make the project accessible to other developers globally
+                do :
+                <span class="grid-bold"> git push</span>
+              </li>
+              <br>
+              </ul>
+  
+           <h3>Why Is Version Control Important?</h3>
+  
+           Version control is important as it makes collaboration more transparent and reproducible.
+           By visibly tracking iterative changes, you and your collaborators can experiment with new 
+           approaches knowing that you can revert to the original as needed.
+           <br>
+  
+           By using Git and GitHub, you can access your code from any computer. If your local machine was to
+            get damaged or stolen, for example, you would lose all of your code with no way to retrieve it.
+            However, if you store your code on GitHub, which is a cloud-based service, you never have to 
+            worry about losing it.
+            Git and GitHub are great tools to consider when working on any coding project. 
+            <br>
+        </p>
+      
+
+      <br>
+      
+      <hr class="long-long">
+  
+
       <h2>Grid: A Powerful Tool for Web Layout Design</h2>
       <p>In the world of web design, creating visually appealing and well-structured layouts is crucial. One effective 
         tool that has revolutionized the way websites are designed is the CSS grid. With its flexible and intuitive nature,
@@ -592,10 +833,13 @@
       </p>
 
     </div>
+
     
   </section>
 
-  
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
 
 </body>
 
