@@ -116,6 +116,8 @@ a:hover {
   [data-aos-delay] {
     transition-delay: 0 !important;
   }
+
+ 
 }
 /*--------------------------------------------------------------
 # Top Bar
@@ -1386,7 +1388,7 @@ margin-top: 2rem;
 
 .devx img {
   height: 85vh;
-  width: 85%;
+  width: 97%;
 }
 
 .contact .php-email-form .form-group {
