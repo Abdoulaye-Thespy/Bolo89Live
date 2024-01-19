@@ -99,7 +99,6 @@
             <li> Stay up-to-date with the latest trends and advancements in front-end development technologies.</li>
 
             
-            <!-- <button class="apply-now"><a href="index.html#contact">Apply Now</a></button> -->
           </ul>
           <br>
           <h5>Requirements: </h5>
@@ -139,19 +138,16 @@
              To apply, please submit your resume, portfolio, and any relevant code samples showcasing your React
               JS and Figma conversion expertise.
            </p>
+           <br>
 
-                <button class="apply-now"><a href="index.html#contact">Apply Now</a></button>
-                <br>
-                <br>
+           <button class="apply-now"><a href="https://script.google.com/macros/s/AKfycbw3BKHQjSfkZ0-cMwtHjXvNbxj_-oU1TIr8IhK1NTZO6CQWKzdj6dSrGRWPX3qtW76E5A/exec">Apply Now</a></button>
 
-          
 
-        
       </div>
 
       <!-- small box -->
       <div class="col-4">
-        <button class="apply-now second-apply"><a href="index.html#contact">Apply Now</a></button>
+        <button class="apply-now second-apply"><a href="https://script.google.com/macros/s/AKfycbw3BKHQjSfkZ0-cMwtHjXvNbxj_-oU1TIr8IhK1NTZO6CQWKzdj6dSrGRWPX3qtW76E5A/exec">Apply Now</a></button>
 
         <br>
 
@@ -294,9 +290,34 @@
   s1.setAttribute('crossorigin','*');
   s0.parentNode.insertBefore(s1,s0);
   })();
+
+  let url = "https://script.google.com/macros/s/AKfycbw3BKHQjSfkZ0-cMwtHjXvNbxj_-oU1TIr8IhK1NTZO6CQWKzdj6dSrGRWPX3qtW76E5A/exec";
+
+  let file = document.querySelector("input");
+  let img = document.querySelector("img");
+  file.addEventListener('change',()=>{
+    let fr = new FileReader();
+    fr.addEventListener('loadend',()=>{
+      let res = fr.result;
+      img.src=res;
+      let spt = res.split("base64,")[1]
+      //console.log(res);
+      let obj = {
+        base64:spt,
+        type:file.files[0].type,
+        name:file.files[0].name
+      }
+      fetch(url,{
+        method:"POST",
+        body:JSON.stringify(obj)
+      })
+      .then(r=>r.text())
+      .then(data=>console.log(data))
+    })
+    fr.readAsDataURL(file.files[0])
+  })
   </script>
   <!--End of Tawk.to Script-->
-
 
   
 </body>
