@@ -1024,9 +1024,8 @@ section {
 # Events
 --------------------------------------------------------------*/
 .events {
-  background: url(../img/bolo89/background3.jpg) center center no-repeat;
-  background-size: cover;
-  position: relative;
+  background-color: #f0e2e2;
+  
 }
 .events::before {
   content: "";
@@ -1037,9 +1036,11 @@ section {
   left: 0;
   bottom: 0;
 }
+
 .events .section-title h2 {
-  color: #fff;
+  color: #000;
 }
+
 .events .container {
   position: relative;
 }
