@@ -271,7 +271,7 @@
   @media screen and (max-width: 414px) {
     .content-box h2 {
       font-size: 1rem;
-      bottom: 1.4rem;
+      bottom: 4rem;
       right: 0rem;
     }
   
@@ -296,8 +296,8 @@
     .content-box {
       width: 60%;
       left: 4.5rem;
-      height: 18%;
-      top: 7.5rem;
+      height: 30%;
+      top: 19rem;
       /* top: 1116rem; */
     }
   
@@ -306,7 +306,7 @@
     }
   
     .first-div {
-      top: 16.5rem;
+      top: 40rem;
     }
   }
   
