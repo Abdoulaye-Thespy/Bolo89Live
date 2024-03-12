@@ -42,7 +42,7 @@ margin: 0;
   box-shadow: 5px 5px 5px 5px rgba(253, 141, 100, 0.2);
     background-color: rgba(206, 165, 95, 0.7);
     width: 50%;
-    height: 25%;
+    height: 50%;
     position: absolute;
     top: 11rem;
     left: 15rem;
@@ -148,7 +148,7 @@ margin: 0;
 }
 
 .content-box h2 {
-  bottom: 2rem;
+  bottom: 6rem;
 }
 
 .content-box {

@@ -682,13 +682,21 @@ section {
 }
 .about:before {
   content: "";
-  background: rgba(255, 255, 255, 0.773);
+  background: #f0e2e2;
   position: absolute;
   bottom: 0;
   top: 0;
   left: 0;
   right: 0;
 }
+
+.change-black {
+  color: #000;
+  background-color: #f1eded;
+  padding: 10px;
+  font-size: 18px;
+}
+
 .about .about-img {
   position: relative;
   transition: 0.5s;
@@ -767,6 +775,12 @@ section {
   transition: all ease-in-out 0.3s;
   background: white;
 }
+
+.box {
+  /* border: 2px solid blue; */
+  height: 90%;
+}
+
 .why-us .box span {
   display: block;
   font-size: 28px;
@@ -792,17 +806,21 @@ section {
   padding: 30px 30px 70px 30px;
   box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
 }
+
 .why-us .box:hover span,.why-us .box:hover ul i,.why-us .box:hover ul li, .why-us .box:hover h4, .why-us .box:hover p {
   color: #fff;
 }
+
 .why-us .box ul {
   list-style: none;
   padding: 0;
 }
+
 .why-us .box ul li {
   padding-bottom: 10px;
   color: #aaaaaa;
 }
+
 .why-us .box ul i {
   font-size: 20px;
   padding-right: 4px;
@@ -886,6 +904,15 @@ section {
   position: relative;
   padding: 0;
 }
+
+.backgro {
+  height: 300px;
+  background: url("../img/bolo89/img4.jpg");
+  background-size: cover;
+  position: relative;
+  padding: 0;
+}
+
 .back2 {
   background: url("../img/bolo89/office2.jpg");
 }
@@ -913,7 +940,8 @@ section {
 --------------------------------------------------------------*/
 .blog-row {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px; 
 }
 
 .blog-background {
@@ -1015,22 +1043,23 @@ section {
 # Events
 --------------------------------------------------------------*/
 .events {
-  background: url(../img/bolo89/background3.jpg) center center no-repeat;
-  background-size: cover;
-  position: relative;
+  background-color: #f0e2e2;
+  
 }
 .events::before {
   content: "";
-  background-color: rgba(0, 0, 0, 0.8);
+ 
   position: absolute;
   top: 0;
   right: 0;
   left: 0;
   bottom: 0;
 }
+
 .events .section-title h2 {
-  color: #fff;
+  color: #000;
 }
+
 .events .container {
   position: relative;
 }
@@ -1494,6 +1523,7 @@ margin-top: 2rem;
   padding: 0 0 30px 0;
   color: #625b4b;
   font-size: 14px;
+  margin-top: 2rem;
 }
 #footer .footer-info img {
   max-width: 200px;

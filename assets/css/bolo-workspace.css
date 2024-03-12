@@ -1,0 +1,313 @@
+*{
+  padding: 0;
+  margin: 0;
+  }
+  .long-long {
+    width: 100%;
+    border-bottom: 5px #cda45e;
+    color: #cda45e;
+  }
+  .main-heading {
+    color: #000;
+    font-weight: 800;
+    font-size: 30px;
+  }
+  
+  
+  .blog-image {
+    border: 2px solid red;
+  }
+  
+  .shift-down {
+    position: absolute;
+    top: 20rem;
+  }
+  
+  .side-left {
+    width: 100%;
+    height: 100vh;
+    background: url("../img/bolo89/img4.jpg") top center;
+    background-size: cover;
+    position: relative;
+    padding: 0;
+    background-repeat: no-repeat;
+
+  }
+
+  .seperate {
+    display: flex;
+    
+  }
+  
+  #header {
+    background: rgba(12, 11, 9, 0.6);
+    border-bottom: 1px solid rgba(12, 11, 9, 0.6);
+    transition: all 0.5s;
+    z-index: 997;
+    padding: 15px 0;
+    top: 40px;
+    width: 100%;
+  }
+  
+  .content-box {
+    box-shadow: 5px 5px 5px 5px rgba(253, 141, 100, 0.2);
+    background-color: rgb(214, 178, 115);
+      color: #000;
+      position: absolute;
+      left: 0;
+      width: 30%;
+      height: 100%;
+  }
+  
+  .content-box h2 {
+    display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      font-weight: bold;
+      font-size: 1.8rem;
+      bottom: 7rem;
+      position: relative;
+  }
+  
+  .order-list {
+    top: 13rem;
+    font-weight: bold;
+    font-size: 1rem;
+    position: absolute;
+  }
+  
+  .order-list a {
+    color: #000;
+    
+  }
+  
+  .order-list a:hover {
+    color: #fff;
+  }
+  
+  .first-div {
+    color: #000;
+      position: absolute;
+      box-shadow: 5px 5px 5px 5px rgba(26, 26, 124, 0.2);
+      top: 44rem;
+      background-color: rgba(231, 231, 238, 0.5);
+      width: 90%;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 2rem 2rem;
+      font-weight: 500;
+      font-size: 1.5rem;
+  }
+  
+  .first-div h2 {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #cda45e;
+    width: 80%;
+  }
+  
+  .first-div h3 {
+    font-weight: 500;
+    font-size: 2rem;
+    color: #cda45e;
+  }
+
+  h5 {
+    color: #cda45e;
+    font-size: 1.5rem;
+  }
+  
+  .grid-span {
+    background-color: rgba(206, 165, 95, 0.5);
+    font-weight: 600;
+  }
+  
+  .grid-bold {
+    color: #cda45e;
+    font-weight: 500;
+    font-size: 1.5rem;
+  
+  }
+  
+  .first-div h4 {
+    font-weight: 700;
+    font-size: 1.7rem;
+    color: #cda45e;
+  }
+  
+   .home-blog {
+      display: block;
+      color: #fff;
+    }
+
+    .bold {
+      color: #cda45e;
+    font-weight: 800;
+    text-decoration: underline;
+    }
+  
+  @media screen and (min-width: 1024px) {
+    /* .body {
+      width: 100%;
+      height: 100vh;
+      background: url(../img/bolo89/img4.jpg) top center;
+      background-size: cover;
+      position: relative;
+      padding: 0;
+      background-repeat: no-repeat;
+  }
+   */
+  .first-div {
+    top: 35rem;
+    width: 90%;
+    left: 4rem;
+   
+  }
+  
+  .content-box h2 {
+    bottom: -10rem;
+    color: #fff;
+  }
+  
+  }
+  
+  @media screen and (min-width: 1280px) {
+    .first-div {
+      top: 45rem;
+    }
+
+  
+  }
+  
+  /* mobile responsive */
+  @media screen and (max-width: 768px) {
+  
+    .bi {
+      display: block;
+    }
+  
+    .mobile-nav-toggle {
+      color: #A66953;
+      font-size: 28px;
+      cursor: pointer;
+      line-height: 0;
+      transition: 0.5s;
+    }
+  
+    .mobile-nav-toggle {
+      display: block;
+      color: #fff;
+      font-size: 28px;
+      cursor: pointer;
+    }
+  
+    .long-long {
+      width: 100%;
+      border-bottom: 5px #cda45e;
+      color: #cda45e;
+      height: 5px;
+    }
+  
+    .body {
+      background-size: 100% auto;
+    }
+  
+    #header {
+      padding: 10px 0;
+      top: 40px;
+      width: 100%;
+    }
+  
+    .content-box h2 {
+      font-size: 1rem;
+      bottom: 7rem;
+      right: 8rem;
+    }
+  
+    .content-box {
+      width: 60%;
+      height: 15%;
+      position: absolute;
+      top: 8rem;
+      left: 4rem;
+      display: flex;
+      color: white;
+    }
+  
+    .order-list a {
+      color: white;
+    }
+  
+    .order-list {
+      position: absolute;
+      top: 3rem;
+      font-weight: bold;
+      font-size: 0.7rem;
+    }
+  
+    .content-box h2 {
+      font-size: 1rem;
+      bottom: 1.1rem;
+      right: 0rem;
+    }
+  
+    .first-div {
+      top: 16rem;
+    }
+  
+    .home-blog {
+      display: block;
+      color: #fff;
+      font-weight: 500;
+      font-size: 1.3rem;
+      padding-right: 3rem;
+    }
+  }
+  
+  @media screen and (max-width: 414px) {
+    .content-box h2 {
+      font-size: 1rem;
+      bottom: 1.4rem;
+      right: 0rem;
+    }
+  
+    .order-list {
+      top: 3rem;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .first-div {
+      top: 22.5rem;
+    }
+  
+    .content-box {
+      width: 60%;
+      left: 5rem;
+    }
+  }
+  
+  
+  @media screen and (max-width: 540px) {
+    .content-box {
+      width: 60%;
+      left: 4.5rem;
+      height: 18%;
+      top: 7.5rem;
+      /* top: 1116rem; */
+    }
+  
+    .order-list {
+      top: 2.8rem;
+    }
+  
+    .first-div {
+      top: 16.5rem;
+    }
+  }
+  
+  
