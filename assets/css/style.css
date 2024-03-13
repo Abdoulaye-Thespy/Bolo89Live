@@ -411,7 +411,7 @@ a:hover {
 }
 #hero:before {
   content: "";
-  background: rgba(0, 0, 0, 0.5);
+  background: #fff;
   position: absolute;
   bottom: 0;
   top: 0;
